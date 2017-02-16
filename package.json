@@ -1,0 +1,32 @@
+{
+  "name": "json-extend",
+  "version": "0.0.1",
+  "description": "Deep extend library for JSON objects",
+  "author": "mr.kequc@gmail.com",
+  "license": "ISC",
+  "scripts": {
+    "test": "mocha --recursive ./test"
+  },
+  "files": [
+    "lib/"
+  ],
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kequc/json-extend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kequc/json-extend/issues"
+  },
+  "homepage": "http://www.kequc.com",
+  "keywords": [
+    "json",
+    "deep extend",
+    "extend",
+    "couchdb"
+  ],
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
