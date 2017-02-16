@@ -1,7 +1,7 @@
 'use strict';
-const objectExtend = require('./lib/object-extend');
+const jsonExtend = require('./lib/json-extend');
 const $ = require('./lib/extensions');
 
-objectExtend.$ = $;
+jsonExtend.$ = $;
 
-module.exports = objectExtend;
+module.exports = jsonExtend;
