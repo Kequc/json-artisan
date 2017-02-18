@@ -5,7 +5,7 @@ const expect = require('chai').expect;
 const jsonExtend = require('../lib/json-extend');
 
 describe('jsonExtend', function () {
-    describe('empties', function () {
+    describe('empty', function () {
         it('returns empty objct on no valid input', function () {
             expect(jsonExtend()).to.eql({});
             expect(jsonExtend(1, 2)).to.eql({});
@@ -38,7 +38,7 @@ describe('jsonExtend', function () {
             expect(result).to.eql({ hello: 0, cat: 'dog' });
         });
     });
-    describe('objects', function () {
+    describe('object', function () {
         it('merges the source with the target', function () {
             const target = { existing: 'data' };
             const source = { hello: 0, cat: 'dog', existing: 'overwritten' };
@@ -61,7 +61,7 @@ describe('jsonExtend', function () {
             expect(result).to.eql(source);
         });
     });
-    describe('arrays', function () {
+    describe('array', function () {
         it('overwrites a target non-array', function () {
             const target = { array: 200 };
             const source = { array: ['new one', 11] };
@@ -84,7 +84,7 @@ describe('jsonExtend', function () {
             expect(result).to.eql(source);
         });
     });
-    describe('functions', function () {
+    describe('function', function () {
         it('delivers the old value', function () {
             const old = 'hi';
             const func = (value) => {
