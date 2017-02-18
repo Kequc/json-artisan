@@ -59,7 +59,10 @@ describe('library', function () {
         const source = {
             hello: [{ overwritten: 'stuff' }, { hey: '!' }],
             deep: {
-                income: undefined,
+                income: $.Object.Set({
+                    '2015': { nov: 2600, dec: 2600 },
+                    '2016': { jan: 2850, feb: 3000, mar: 3000, apr: 3000, may: 3000, jun: 2750 }
+                }),
                 cats: $.Array.Map($.String.Append('cat', '-'))
             },
             isParent: $.Boolean.Toggle(),
@@ -69,6 +72,10 @@ describe('library', function () {
             hello: [{ overwritten: 'stuff' }, { hey: '!' }],
             deep: {
                 something: { here: 11 },
+                income: {
+                    '2015': { nov: 2600, dec: 2600 },
+                    '2016': { jan: 2850, feb: 3000, mar: 3000, apr: 3000, may: 3000, jun: 2750 }
+                },
                 auto: 'torus',
                 year: 2011,
                 cats: ['tammy-cat', 'felix-cat']
