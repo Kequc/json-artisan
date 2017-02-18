@@ -35,7 +35,7 @@ artisan({
     canDraw: true
 });
 #=> {
-    name: 'ruddigar',
+    name: 'ruddiger',
     age: 28,
     pets: {
         dogs: ['murphey'],
@@ -88,36 +88,6 @@ The library comes with a useful set of extensions available via the `$` object.
 const $ = require('json-artisan').$;
 ```
 
-#### $.Array.Insert
-
-Insert provided values at the beginning of the array.
-
-```javascript
-artisan({
-    dogs: ['rex']
-}, {
-    dogs: $.Array.Insert('jacob', 'murphey')
-});
-#=> {
-    dogs: ['jacob', 'murphey', 'rex']
-}
-```
-
-#### $.Array.Splice
-
-Splice the array.
-
-```javascript
-artisan({
-    dogs: ['jacob', 'murphey', 'rex']
-}, {
-    dogs: $.Array.Splice(1, 1, 'alex', 'fredrick')
-});
-#=> {
-    dogs: ['jacob', 'alex', 'fredrick', 'rex']
-}
-```
-
 #### $.Array.Concat
 
 Adds provided values to the end of the array.
@@ -148,6 +118,21 @@ artisan({
 }
 ```
 
+#### $.Array.Splice
+
+Splice the array.
+
+```javascript
+artisan({
+    dogs: ['jacob', 'murphey', 'rex']
+}, {
+    dogs: $.Array.Splice(1, 1, 'alex', 'fredrick')
+});
+#=> {
+    dogs: ['jacob', 'alex', 'fredrick', 'rex']
+}
+```
+
 #### $.Array.Map
 
 Performs the provided method on every item in the array.
@@ -163,7 +148,7 @@ artisan({
 }
 ```
 
-### $.Boolean.toggle
+#### $.Boolean.Toggle
 
 Reverses the value of the boolean (default: true).
 
@@ -178,7 +163,7 @@ artisan({
 }
 ```
 
-### $.Number.Inc $.Number.Dec
+#### $.Number.Inc $.Number.Dec
 
 Increments or decrements the number by the provided amount (default: 1).
 
@@ -193,7 +178,7 @@ artisan({
 }
 ```
 
-### $.Number.Mul $.Number.Div
+#### $.Number.Mul $.Number.Div
 
 Multiplies or divides the number by the provided amount (default: 1).
 
@@ -208,7 +193,7 @@ artisan({
 }
 ```
 
-### $.Number.Max $.Number.Min
+#### $.Number.Max $.Number.Min
 
 Sets the number to the highest or lowest number (default: 0).
 
@@ -223,7 +208,7 @@ artisan({
 }
 ```
 
-### $.Object.Set
+#### $.Object.Set
 
 Replaces the object rather than extending it (default: {}).
 
@@ -238,7 +223,7 @@ artisan({
 }
 ```
 
-### $.String.Append $.String.Prepend
+#### $.String.Append $.String.Prepend
 
 Appends or prepends a string with an optional separator (default: '').
 

@@ -1,6 +1,6 @@
 {
   "name": "json-artisan",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A JSON deep extend library",
   "author": "mr.kequc@gmail.com",
   "license": "ISC",
@@ -23,7 +23,7 @@
     "json",
     "deep extend",
     "extend",
-    "couch"
+    "couchdb"
   ],
   "devDependencies": {
     "chai": "^3.5.0",
