@@ -229,12 +229,12 @@ Appends or prepends a string with an optional separator (default: '').
 
 ```javascript
 artisan({
-    fullName: 'rodrigo'
+    fullName: 'kangaroo'
 }, {
-    fullName: $.String.Append('kangaroo', ', ')
+    fullName: $.String.Append('rodrigo', ', ')
 });
 #=> {
-    fullName: 'rodrigo, kangaroo'
+    fullName: 'kangaroo, rodrigo'
 }
 ```
 
