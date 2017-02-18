@@ -1,7 +1,7 @@
 {
-  "name": "json-extend",
+  "name": "json-artisan",
   "version": "0.0.1",
-  "description": "Deep extend library for JSON objects",
+  "description": "A JSON deep extend library",
   "author": "mr.kequc@gmail.com",
   "license": "ISC",
   "scripts": {
@@ -10,20 +10,20 @@
   "files": [
     "lib/"
   ],
-  "main": "./index.js",
+  "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kequc/json-extend.git"
+    "url": "git+https://github.com/Kequc/json-artisan.git"
   },
   "bugs": {
-    "url": "https://github.com/Kequc/json-extend/issues"
+    "url": "https://github.com/Kequc/json-artisan/issues"
   },
   "homepage": "http://www.kequc.com",
   "keywords": [
     "json",
     "deep extend",
     "extend",
-    "couchdb"
+    "couch"
   ],
   "devDependencies": {
     "chai": "^3.5.0",
