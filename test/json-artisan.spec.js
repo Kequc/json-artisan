@@ -92,14 +92,14 @@ describe('artisan', function () {
             };
             artisan({ old }, { old: func });
         });
-        it('delivers arrays', function () {
+        it('delivers objects', function () {
             const old = { what: 'up' };
             const func = (value) => {
                 expect(value).to.equal(old);
             };
             artisan({ old }, { old: func });
         });
-        it('delivers objects', function () {
+        it('delivers arrays', function () {
             const old = ['array content', 111];
             const func = (value) => {
                 expect(value).to.equal(old);
