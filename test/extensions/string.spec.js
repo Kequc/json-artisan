@@ -5,8 +5,8 @@ const expect = require('chai').expect;
 const $ = require('../../lib/extensions');
 
 describe('String extension', function () {
-    describe('append', function () {
-        const operation = $.String.append;
+    describe('Append', function () {
+        const operation = $.String.Append;
         it('appends a string', function () {
             expect(operation()('hello')).to.equal('hello');
             expect(operation()('test')).to.equal('test');
@@ -26,8 +26,8 @@ describe('String extension', function () {
             expect(operation('bill')(['dog'])).to.equal('bill');
         });
     });
-    describe('prepend', function () {
-        const operation = $.String.prepend;
+    describe('Prepend', function () {
+        const operation = $.String.Prepend;
         it('prepends a string', function () {
             expect(operation()('hello')).to.equal('hello');
             expect(operation()('test')).to.equal('test');

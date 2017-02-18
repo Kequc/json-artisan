@@ -5,8 +5,8 @@ const expect = require('chai').expect;
 const $ = require('../../lib/extensions');
 
 describe('Boolean extension', function () {
-    describe('toggle', function () {
-        const operation = $.Boolean.toggle;
+    describe('Toggle', function () {
+        const operation = $.Boolean.Toggle;
         it('toogles a boolean', function () {
             expect(operation()(false)).to.equal(true);
             expect(operation()(true)).to.equal(false);

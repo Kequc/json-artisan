@@ -5,8 +5,8 @@ const expect = require('chai').expect;
 const $ = require('../../lib/extensions');
 
 describe('Number extension', function () {
-    describe('inc', function () {
-        const operation = $.Number.inc;
+    describe('Inc', function () {
+        const operation = $.Number.Inc;
         it('increments a number', function () {
             expect(operation()(20)).to.equal(21);
             expect(operation()(1)).to.equal(2);
@@ -20,8 +20,8 @@ describe('Number extension', function () {
             expect(operation(30)([2])).to.equal(30);
         });
     });
-    describe('dec', function () {
-        const operation = $.Number.dec;
+    describe('Dec', function () {
+        const operation = $.Number.Dec;
         it('decrements a number', function () {
             expect(operation()(20)).to.equal(19);
             expect(operation()(1)).to.equal(0);
@@ -35,8 +35,8 @@ describe('Number extension', function () {
             expect(operation(30)([2])).to.equal(-30);
         });
     });
-    describe('mul', function () {
-        const operation = $.Number.mul;
+    describe('Mul', function () {
+        const operation = $.Number.Mul;
         it('multiplies a number', function () {
             expect(operation()(20)).to.equal(20);
             expect(operation()(1)).to.equal(1);
@@ -50,8 +50,8 @@ describe('Number extension', function () {
             expect(operation(30)([2])).to.equal(0);
         });
     });
-    describe('div', function () {
-        const operation = $.Number.div;
+    describe('Div', function () {
+        const operation = $.Number.Div;
         it('divides a number', function () {
             expect(operation()(20)).to.equal(20);
             expect(operation()(1)).to.equal(1);
@@ -65,8 +65,8 @@ describe('Number extension', function () {
             expect(operation(30)([2])).to.equal(0);
         });
     });
-    describe('max', function () {
-        const operation = $.Number.max;
+    describe('Max', function () {
+        const operation = $.Number.Max;
         it('returns the largest number', function () {
             expect(operation()(20)).to.equal(20);
             expect(operation()(1)).to.equal(1);
@@ -80,8 +80,8 @@ describe('Number extension', function () {
             expect(operation(30)([2])).to.equal(30);
         });
     });
-    describe('min', function () {
-        const operation = $.Number.min;
+    describe('Min', function () {
+        const operation = $.Number.Min;
         it('returns the smallest number', function () {
             expect(operation()(20)).to.equal(0);
             expect(operation()(1)).to.equal(0);

@@ -5,8 +5,8 @@ const expect = require('chai').expect;
 const $ = require('../../lib/extensions');
 
 describe('Array extension', function () {
-    describe('insert', function () {
-        const operation = $.Array.insert;
+    describe('Insert', function () {
+        const operation = $.Array.Insert;
         it('inserts items into an array', function () {
             expect(operation()(['hello'])).to.eql(['hello']);
             expect(operation('test')([])).to.eql(['test']);
@@ -20,8 +20,8 @@ describe('Array extension', function () {
             expect(operation('dog')(2)).to.eql(['dog']);
         });
     });
-    describe('splice', function () {
-        const operation = $.Array.splice;
+    describe('Splice', function () {
+        const operation = $.Array.Splice;
         it('splices an array', function () {
             expect(operation()(['hello'])).to.eql(['hello']);
             expect(operation(3, 0, 'test')([])).to.eql(['test']);
@@ -37,8 +37,8 @@ describe('Array extension', function () {
             expect(operation(1, 0, 'dog')(2)).to.eql(['dog']);
         });
     });
-    describe('concat', function () {
-        const operation = $.Array.concat;
+    describe('Concat', function () {
+        const operation = $.Array.Concat;
         it('appends items to an array', function () {
             expect(operation()(['hello'])).to.eql(['hello']);
             expect(operation('test')([])).to.eql(['test']);
@@ -52,8 +52,8 @@ describe('Array extension', function () {
             expect(operation('dog')(2)).to.eql(['dog']);
         });
     });
-    describe('addToSet', function () {
-        const operation = $.Array.addToSet;
+    describe('AddToSet', function () {
+        const operation = $.Array.AddToSet;
         it('appends items to an array if missing', function () {
             expect(operation()(['hello'])).to.eql(['hello']);
             expect(operation('test')([])).to.eql(['test']);
@@ -67,8 +67,8 @@ describe('Array extension', function () {
             expect(operation('dog')(2)).to.eql(['dog']);
         });
     });
-    describe('map', function () {
-        const operation = $.Array.map;
+    describe('Map', function () {
+        const operation = $.Array.Map;
         it('runs the provided function for each item', function () {
             expect(operation()(['hello'])).to.eql([undefined]);
             expect(operation(value => value + 'test')(['hmm', 'hm'])).to.eql(['hmmtest', 'hmtest']);
