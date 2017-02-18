@@ -210,7 +210,7 @@ artisan({
 
 ### $.Number.Max $.Number.Min
 
-Sets the number to the highers or lowest number (default: 0).
+Sets the number to the highest or lowest number (default: 0).
 
 ```javascript
 artisan({
