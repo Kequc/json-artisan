@@ -5,7 +5,7 @@ const expect = require('chai').expect;
 const artisan = require('../lib/json-artisan');
 
 describe('artisan', function () {
-    describe('empty', function () {
+    describe('Empty', function () {
         it('returns empty objct on no valid input', function () {
             expect(artisan()).to.eql({});
             expect(artisan(1, 2)).to.eql({});
@@ -38,7 +38,7 @@ describe('artisan', function () {
             expect(result).to.eql({ hello: 0, cat: 'dog' });
         });
     });
-    describe('object', function () {
+    describe('Object', function () {
         it('merges the source with the target', function () {
             const target = { existing: 'data' };
             const source = { hello: 0, cat: 'dog', existing: 'overwritten' };
@@ -61,7 +61,7 @@ describe('artisan', function () {
             expect(result).to.eql(source);
         });
     });
-    describe('array', function () {
+    describe('Array', function () {
         it('overwrites a target non-array', function () {
             const target = { array: 200 };
             const source = { array: ['new one', 11] };
@@ -84,7 +84,7 @@ describe('artisan', function () {
             expect(result).to.eql(source);
         });
     });
-    describe('function', function () {
+    describe('Function', function () {
         it('delivers the old value', function () {
             const old = 'hi';
             const func = (value) => {

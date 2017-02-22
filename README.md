@@ -201,7 +201,7 @@ Sets the number to the highest or lowest number (default: 0).
 artisan({
     health: 120
 }, {
-    health: $.Number.Max(100)
+    health: $.Number.Min(100)
 });
 #=> {
     health: 100
