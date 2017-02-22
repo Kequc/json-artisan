@@ -1,6 +1,6 @@
 {
   "name": "json-artisan",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A JSON deep extend library",
   "author": "mr.kequc@gmail.com",
   "license": "ISC",
@@ -28,9 +28,6 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.4.5"
-  },
-  "directories": {
-    "test": "test"
   },
   "dependencies": {}
 }

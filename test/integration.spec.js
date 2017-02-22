@@ -33,7 +33,8 @@ describe('library', function () {
                 something: { here: 21, area51: 'ufo' },
                 income: { '2017': { jun: 2750 } },
                 auto: 'mercedes',
-                year: 2015
+                year: 2015,
+                cats: ['tammy', 'felix', 'rex']
             },
             canPaint: true
         };
@@ -46,7 +47,7 @@ describe('library', function () {
                 },
                 auto: 'mercedes',
                 year: 2015,
-                cats: ['tammy', 'felix']
+                cats: ['tammy', 'felix', 'rex']
             },
             isParent: true,
             canPaint: true,
