@@ -1,6 +1,6 @@
 {
   "name": "json-artisan",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A JSON deep extend library",
   "author": "mr.kequc@gmail.com",
   "license": "ISC",

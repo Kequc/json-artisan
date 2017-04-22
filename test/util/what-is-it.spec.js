@@ -65,4 +65,9 @@ describe('whatIsIt', function () {
             expect(whatIsIt({})).to.equal('object');
         })
     });
+    describe('Other', function () {
+        it('correctly defaults unknown', function () {
+            expect(whatIsIt(new Buffer(100))).to.equal('unknown');
+        })
+    });
 });

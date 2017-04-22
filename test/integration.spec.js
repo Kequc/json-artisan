@@ -62,6 +62,7 @@ describe('library', function () {
             };
         });
         it('can deep extend complex objects', function () {
+            const myBuffer = new Buffer(100);
             const source = {
                 hello: undefined,
                 deep: {
@@ -69,7 +70,8 @@ describe('library', function () {
                     income: { '2017': { jun: 2750 } },
                     auto: 'mercedes',
                     year: 2015,
-                    cats: ['tammy', 'felix', 'rex']
+                    cats: ['tammy', 'felix', 'rex'],
+                    myBuffer,
                 },
                 canPaint: true
             };
@@ -82,7 +84,8 @@ describe('library', function () {
                     },
                     auto: 'mercedes',
                     year: 2015,
-                    cats: ['tammy', 'felix', 'rex']
+                    cats: ['tammy', 'felix', 'rex'],
+                    myBuffer
                 },
                 isParent: true,
                 canPaint: true,
